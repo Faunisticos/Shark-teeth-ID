@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5e79aa8be3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificación de Dientes de Tiburón</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenido de la página -->
+    <div class="background-gradient"></div>
+    <div class="background-image"></div>
+    <div id="welcome-screen">
+        <h1 data-lang-key="welcomeTitle">Identifica tus dientes de TIBURÓN FÓSILES</h1>
+        <h2 data-lang-key="subtitle">Lamniformes marroquíes.</h2>
+        <p data-lang-key="welcomeText">Mediante una sencilla clave dicotómica interactiva podrás identificar las principales especies de tiburón fósiles que se pueden encontrar en Marruecos.</p>
+        <button id="start-btn" data-lang-key="start">COMENZAR IDENTIFICACIÓN</button>
+        <div id="secondary-buttons">
+            <button id="info-btn"><i class="fa-solid fa-circle-info"></i></button>
+            <button id="species-list-btn"><i class="fa-solid fa-list-ul"></i></button>
+        </div>
+        <div id="language-selection">
+            <button id="spanish-btn" class="language-btn"><i class="fa-solid fa-earth-europe"></i> ESP</button>
+            <button id="english-btn" class="language-btn"><i class="fa-solid fa-earth-americas"></i> ENG</button>
+      </div>
+          <p2>Copyright: Faunísticos. 2024</p2>  
+      </div>
+    </div>
+    <div class="content"></div>
+
+  <div id="info-modal" class="hidden">
+        <button id="close-modal" class="close-btn">X</button>
+        <p data-lang-key="infoText">Aunque aquí podrás identificar a las principales especies encontradas en Marruecos, ten en cuenta que puede haber especies faltantes. Además, la gran variabilidad que se presenta dentro de los dientes de una misma especie, en función de su posición en la mandíbula o de si se trataba de un animal adulto o juvenil, puede llevar a identificaciones erróneas.<br><br>
+        Por todo esto, te recomendamos que uses esta aplicación como primera aproximación para la identificación de un diente, y que posteriormente lo confirmes con fuentes más precisas.<br><br>
+        Como en todas las claves dicotómicas, se necesita algo de experiencia y manejo de la terminología para conseguir los mejores resultados.<br><br>
+        ¡Esperamos que te sea de utilidad!</p>
+    </div>
+
+  <div id="species-modal" class="hidden">
+        <button id="close-species-modal" class="close-btn">X</button>
+        <p>
+            <strong>Squalicorax</strong><br>
+            1. <i>Squalicorax yangaensis</i><br>
+            2. <i>Squalicorax bassanii</i><br>
+            3. <i>Squalicorax pristodontus</i><br>
+            4. <i>Squalicorax benguerirensis</i><br>
+            5. <i>Squalicorax microserratus</i><br>
+            <br>
+            <strong>Otodus</strong><br>
+            6. <i>Otodus sokolowi</i><br>
+            7. <i>Otodus obliquus</i><br>
+            <br>
+            <strong>Carcharias</strong><br>
+            8. <i>Carcharias substriatus</i><br>
+            9. <i>Carcharias acutissimus</i><br>
+            10. <i>Carcharias latus</i><br>
+            11. <i>Carcharias tingitana</i><br>
+            <br>
+            <strong>Striatolamia</strong><br>
+            12. <i>Striatolamia whitei</i><br>
+            13. <i>Striatolamia macrota</i><br>
+            14. <i>Striatolamia striata</i><br>
+            <br>
+            <strong>Scapanorhynchus</strong><br>
+            15. <i>Scapanorhynchus rhaphiodon</i><br>
+            16. <i>Scapanorhynchus rapax</i><br>
+            <br>
+            <strong>Araloselachus</strong><br>
+            17. <i>Araloselachus cuspidatus</i><br>
+            <br>
+            <strong>Odontaspis</strong><br>
+            18. <i>Odontaspis winkleri</i><br>
+            <br>
+            <strong>Jaekelotodus</strong><br>
+            19. <i>Jaekelotodus speyeri</i><br>
+            20. <i>Jaekelotodus africanus</i><br>
+            <br>
+            <strong>Brachycarcharias</strong><br>
+            21. <i>Brachycarcharias atlasi</i><br>
+            22. <i>Brachycarcharias twiggsensis</i><br>
+            23. <i>Brachycarcharias koerti</i><br>
+            <br>
+            <strong>Hypotodus</strong><br>
+            24. <i>Hypotodus verticalis</i><br>
+            <br>
+            <strong>Serratolamna</strong><br>
+            25. <i>Serratolamna serrata</i><br>
+            26. <i>Serratolamna africana</i><br>
+            27. <i>Serratolamna caraibaea</i><br>
+            <br>
+            <strong>Cretalamna</strong><br>
+            28. <i>Cretalamna appendiculata</i><br>
+            29. <i>Cretalamna aschersoni</i><br>
+            30. <i>Cretalamna biauriculata</i><br>
+            31. <i>Cretalamna maroccana</i><br>
+            <br>
+            <strong>Anomotodon</strong><br>
+            32. <i>Anomotodon plicatus</i><br>
+            <br>
+            <strong>Paleocarcharodon</strong><br>
+            33. <i>Paleocarcharodon orientalis</i><br>
+            <br>
+            <strong>Macrorhizodus</strong><br>
+            34. <i>Macrorhizodus praecursor</i><br>
+            <br>
+            <strong>Trigonotodus</strong><br>
+            35. <i>Trigonotodus tusbairicus</i><br>
+            <br>
+            <strong>Isurolamna</strong><br>
+            36. <i>Isurolamna inflata</i><br>
+        </p>
+    </div>
+  
+    <div id="question-screen" class="hidden">
+        <div class="content"></div>
+        <p id="question-text" data-lang-key="question1"></p>
+        <div id="option-buttons">
+            <button id="option1-btn" data-lang-key="yes">Sí</button>
+            <button id="option2-btn" data-lang-key="no">No</button>
+        </div>
+        <div id="navigation-buttons">
+            <button id="back-btn" class="small-btn"><i class="fa-solid fa-backward-step"></i></button>
+            <button id="restart-btn" class="small-btn"><i class="fa-solid fa-house"></i></i></button>
+        </div>
+    <div class="content"></div>
+<p2>Copyright: Faunísticos. 2024</p2>
+    <div class="content"></div>  
+    </div>
+
+    <div id="result-screen" class="hidden">
+        <div class="content"></div>
+        <h2 id="result-text"></h2>
+        <div id="species-descriptions">
+        <div class="species-description hidden" id="species1-description" data-lang-key="species1Description">
+        </div>
+        <div class="species-description hidden" id="species2-description" data-lang-key="species2Description">
+        </div>
+        <div class="species-description hidden" id="species3-description" data-lang-key="species3Description">
+        </div>
+        <div class="species-description hidden" id="species4-description" data-lang-key="species4Description">
+        </div>
+        <div class="species-description hidden" id="species5-description" data-lang-key="species5Description">
+        </div>         	
+        <div class="species-description hidden" id="species6-description" data-lang-key="species6Description">
+        </div>
+        <div class="species-description hidden" id="species7-description" data-lang-key="species7Description">
+        </div>
+        <div class="species-description hidden" id="species8-description" data-lang-key="species8Description">
+        </div> 
+        <div class="species-description hidden" id="species9-description" data-lang-key="species9Description">
+        </div>
+        <div class="species-description hidden" id="species10-description" data-lang-key="species10Description">
+        </div>
+        <div class="species-description hidden" id="species11-description" data-lang-key="species11Description">
+        </div>
+        <div class="species-description hidden" id="species12-description" data-lang-key="species12Description">
+        </div>
+        <div class="species-description hidden" id="species13-description" data-lang-key="species13Description">
+        </div>
+        <div class="species-description hidden" id="species14-description" data-lang-key="species14Description">
+        </div> 
+        <div class="species-description hidden" id="species15-description" data-lang-key="species15Description">
+        </div>
+        <div class="species-description hidden" id="species16-description" data-lang-key="species16Description">
+        </div>
+        <div class="species-description hidden" id="species17-description" data-lang-key="species17Description">
+        </div>
+        <div class="species-description hidden" id="species18-description" data-lang-key="species18Description">
+        </div> 
+        <div class="species-description hidden" id="species19-description" data-lang-key="species19Description">
+        </div> 
+        <div class="species-description hidden" id="species20-description" data-lang-key="species20Description">
+        </div>  
+        <div class="species-description hidden" id="species21-description" data-lang-key="species21Description">
+        </div>
+        <div class="species-description hidden" id="species22-description" data-lang-key="species22Description">
+        </div>
+        <div class="species-description hidden" id="species23-description" data-lang-key="species23Description">
+        </div> 
+        <div class="species-description hidden" id="species24-description" data-lang-key="species24Description">
+        </div> 
+        <div class="species-description hidden" id="species25-description" data-lang-key="species25Description">
+        </div>
+        <div class="species-description hidden" id="species26-description" data-lang-key="species26Description">
+        </div>
+        <div class="species-description hidden" id="species27-description" data-lang-key="species27Description">
+        </div>
+        <div class="species-description hidden" id="species28-description" data-lang-key="species28Description">
+        </div>
+        <div class="species-description hidden" id="species29-description" data-lang-key="species29Description">
+        </div>
+        <div class="species-description hidden" id="species30-description" data-lang-key="species30Description">
+        </div>
+        <div class="species-description hidden" id="species31-description" data-lang-key="species31Description">
+        </div>
+        <div class="species-description hidden" id="species32-description" data-lang-key="species32Description">
+        </div> 
+        <div class="species-description hidden" id="species33-description" data-lang-key="species33Description">
+        </div> 
+        <div class="species-description hidden" id="species34-description" data-lang-key="species34Description">
+        </div>  
+        <div class="species-description hidden" id="species35-description" data-lang-key="species35Description">
+        </div>  
+        <div class="species-description hidden" id="species36-description" data-lang-key="species36Description">
+        </div>
+        <div class="species-description hidden" id="species37-description" data-lang-key="species37Description">
+        </div>
+        <img id="result-image" src="" alt="Imagen de la especie">
+        <button id="back-btn-result" class="small-btn"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="restart-result-btn" class="small-btn"><i class="fa-solid fa-house"></i></button>
+    </div>
+<p2>Copyright: Faunísticos. 2024</p2>
+    <div class="content"></div>
+    <script src="script.js"></script>
+</body>
+</html>
